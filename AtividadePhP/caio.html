@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Vendas</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 10%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+   <center> <h1>Formulário de Vendas</h1>
+    <form action="caio.php" method="post">
+        <label for="nomeCliente">Nome do Cliente:</label>
+        <input type="text" id="nomeCliente" name="nomeCliente" required>
+ 
+        <label for="produto1">Primeiro Produto:</label>
+        <input type="text" id="produto1" name="produto1" required>
+        <label for="valor1">Valor do Primeiro Produto:</label>
+        <input type="number" id="valor1" name="valor1" step="0.01" required>
+ 
+        <label for="produto2">Segundo Produto:</label>
+        <input type="text" id="produto2" name="produto2" required>
+        <label for="valor2">Valor do Segundo Produto:</label>
+        <input type="number" id="valor2" name="valor2" step="0.01" required>
+ 
+        <label for="valorPago">Valor Pago pelo Cliente:</label>
+        <input type="number" id="valorPago" name="valorPago" step="0.01" required><br><br>
+ 
+        <input type="submit" value="Enviar">
+    </form></center>
+</body>
+</html>
